@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="41dp"
+        android:text="Dólares" />
+
+    <EditText
+        android:id="@+id/dolar"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleDolar"
+        android:maxLength="10"
+        android:layout_alignLeft="@+id/titleDolar"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/titleEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dolar"
+        android:layout_alignLeft="@+id/dolar"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="54dp"
+        android:text="Euros" />
+
+    <EditText
+        android:id="@+id/euro"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEuro"
+        android:layout_alignLeft="@+id/titleEuro"
+        android:maxLength="10"
+        android:layout_marginLeft="2dp"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <RadioGroup
+        android:id="@+id/rbgGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/euro"
+        android:layout_alignLeft="@+id/euro"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:id="@+id/rbDolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convertir a dólares."/>
+
+        <RadioButton
+            android:id="@+id/rbEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convertir a Euros." />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/etTitleValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbgGroup"
+        android:layout_alignLeft="@+id/rbgGroup"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="47dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="Cambio a ..." />
+
+    <TextView
+        android:id="@+id/etValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTitleValor"
+        android:layout_alignLeft="@+id/etTitleValor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="47dp"
+        android:text="00.00"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etValor"
+        android:layout_alignLeft="@+id/etValor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="-37dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="161dp"
+        android:background="@drawable/corner_button"
+        android:text="Convertir"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
