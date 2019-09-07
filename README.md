@@ -1,5 +1,7 @@
 # Conversor de Moneda
 Android TP2
+
+Trabajo Práctico Integrador 2: Interfaz de Usuario -RelativeLayout
 Utilizando como guía el material teórico “Interfaz de Usuario Parte_2”, crear una app que funcionará como conversor de moneda
 
 
